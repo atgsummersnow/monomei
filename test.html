@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">
+        <p id="txt" class="txt1" data-chapter="0">OK, here wo go.</p>
+    </div>
+    <button id="btn_next" type="button">Next</button>
+    <script>
+   var story = [
+        'this is diary number 1',
+        'this is diary number 2',
+        'this is diary number 3',
+        'this is diary number 4',
+        'this is diary number 5'
+    ];
+    var nextBtn = document.getElementById("btn_next");
+    function changeText() {
+        var textBox = document.getElementById("txt");
+        var chapter = Number(textBox.dataset.chapter);
+        if (chapter < story.length - 1) {
+            textBox.dataset.chapter = chapter + 1;
+            textBox.innerHTML = story[chapter + 1];
+
+            if ((story.length - chapter) <= 2 ) {
+                nextBtn.style.display = 'none';
+            }
+        }
+    }
+
+    nextBtn.addEventListener("click", changeText);
+    </script>
+</body>
+</html>

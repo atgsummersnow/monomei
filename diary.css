@@ -1,0 +1,55 @@
+
+.box {
+    width: 200px;
+    height: 100px;
+    overflow-y: scroll;
+    background: url(imgs/paper2.png);
+    background-repeat: no-repeat;
+    background-size: 838px 790px;
+    position: relative;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 5%);
+	width: 800px;
+	height: 600px;
+	padding: 20px;
+	margin: 0px 0;
+	border-radius: 4px;
+	border: 8px ridge rgb(85, 23, 23);
+	box-shadow: 0 0 50px #000000;
+	text-align: left;
+  }
+  .box::-webkit-scrollbar {
+    display: none;}
+  body {
+    background: url(imgs/table.png);
+    background-repeat: no-repeat;
+	background-size: 1538px 890px;
+	color: rgb(0, 0, 0);
+    font-family: myfont;
+	font-size: 1.4em;
+    text-align: left;
+}
+@font-face {
+    font-family: myfont;
+    src: url(IndieFlower-Regular.ttf);
+    font-weight: 300;
+}
+.vids{
+    height: 100px;
+    border: 4px double rgb(105, 90, 65);
+}
+#second{
+    position: relative;
+    vertical-align:top;
+    display: inline-block;
+    bottom: 500px;
+}
+.gay{
+float: left;
+}
+.justwork{
+    position: relative;
+    float: right;
+    right: 50px;
+}

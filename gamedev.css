@@ -1,0 +1,29 @@
+body {
+    background: url(imgs/Tv.png);
+    background-repeat: no-repeat;
+	background-size: 1537px 776px;
+	color: rgb(101, 116, 154);
+    font-family: myfont;
+	font-size: 1.5em;
+}
+.box {
+    overflow-y: scroll;
+    position: relative;
+	top: 115px;
+	left: 765px;
+	transform: translate(-50%, 5%);
+	width: 430px;
+	height: 390px;
+	padding: 20px;
+	margin: 0px 0;
+	border-radius: 4px;
+	border: none;
+	text-align: left;
+  }
+  .box::-webkit-scrollbar {
+    display: none;
+}
+@font-face {
+    font-family: myfont;
+    src: url(silly.ttf);
+}

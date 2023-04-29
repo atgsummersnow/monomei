@@ -1,0 +1,22 @@
+body {
+    background: url(imgs/200w.gif);
+    background-repeat: no-repeat;
+	background-size: 1538px 890px;
+	color: rgb(90, 18, 138);
+    font-family: myfont;
+	font-size: 1.5em;
+}
+h1{
+text-align: center;
+padding-right: 30px;
+}
+@font-face {
+    font-family: myfont;
+    src: url(silly.ttf);
+}
+.center {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 460px;
+  }
